@@ -50,7 +50,7 @@ def main():
         # Copy appropriate files in the directory
         for f in glob.glob("../server/" + mfloat + "*"):
             shutil.copy(f, mfloat_path)
-        for f in glob.glob("../server/" + mfloat[-2:] + "_*"):
+        for f in glob.glob("../server/" + mfloat[-4:] + "_*"):
             shutil.copy(f, mfloat_path)
 
         # Build list of all mermaid events recorded by the float
