@@ -39,7 +39,7 @@ class Dive:
 
         # Get the date of the file
         if "_" in log_name:
-            hexdate = log_name[3:-4]
+            hexdate = log_name[5:-4]
         else:
             hexdate = log_name[0:-4]
         timestamp = int(hexdate, 16)
