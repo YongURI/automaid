@@ -69,7 +69,7 @@ class Event:
             self.requested = False
             self.trig = int(catch_trig[0])
             date = re.findall(" DATE=(\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}\.\d{6})", header, re.DOTALL)
-                if [date] = []:
+                if date = []:
                     date = re.findall(" DATE=(\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2})", header, re.DOTALL)
             self.date = UTCDateTime(date[0])
             self.depth = int(re.findall(" PRESSURE=(\d+)", self.header)[0])
